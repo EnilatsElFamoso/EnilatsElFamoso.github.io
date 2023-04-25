@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patrick il hack en php</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: fill;
+		}
+	</style>
+</head>
+<body>
+	<video id="vid" loop>
+		<source src="http://www.partridgegetslucky.com/vid/partridgeGetsLucky.mp4" type="video/mp4">
+	</video>
+	<script>
+		var video = document.getElementById("vid");
+		video.addEventListener('click', function() {
+			if (video.paused) {
+				video.play();
+			} else {
+				video.pause();
+			}
+		});
+	</script>
+</body>
+</html>
