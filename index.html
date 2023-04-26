@@ -4,22 +4,47 @@
 	<title>Patrick il hack en php</title>
 	<style>
 		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: rgb(23, 22, 22);
-			text-align: center;
-			font-size: 100px;
-			font-style: bold;
-			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		  background-color: #1a1a1a;
+		  color: #fff;
+		  font-family: Arial, sans-serif;
+		  display: flex;
+		  flex-direction: row;
+		  align-items: center;
+		  justify-content: center;
+		  height: 100vh;
 		}
-		.chienne:hover {
-			text-decoration-line: underline;
+  
+		button {
+		  background-color: #333;
+		  color: #fff;
+		  border-radius: 50%;
+		  border: none;
+		  font-size: 1.5rem;
+		  width: 200px;
+		  height: 200px;
+		  transition: transform 0.3s ease-in-out;
 		}
-	</style>
+  
+		button:hover {
+		  transform: scale(1.1);
+		  border: 2px solid red;
+		}
+  
+		#button1 {
+		  margin-right: 20px;
+		}
+  
+		#button2 {
+		  margin-left: 20px;
+		}
+	  </style>
 </head>
 <body>
-	<a href="patrice.html" target="_self" style="text-decoration: none;" style="background-color: red; " class="chienne">Patrice</a>
-	<a href="ronaldo.html" target="_self" style="text-decoration: none;" style="background-color: red;" class="chienne">Ronaldo</a>
+	<a href="patrice.html" target="_self" style="text-decoration: none;" style="background-color: red; ">
+		<button id="button1">Patrice</button>
+	</a>
+	<a href="ronaldo.html" target="_self" style="text-decoration: none;" style="background-color: red;">
+		<button id="button2">Ronaldo</button>
+	</a>
 </body>
 </html>
