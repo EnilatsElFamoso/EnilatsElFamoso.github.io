@@ -19,7 +19,7 @@
 		  color: #fff;
 		  border-radius: 50%;
 		  border: none;
-		  font-size: 1.5rem;
+		  font-size: 2rem;
 		  width: 200px;
 		  height: 200px;
 		  transition: transform 0.3s ease-in-out;
@@ -27,7 +27,7 @@
   
 		button:hover {
 		  transform: scale(1.1);
-		  border: 2px solid red;
+		  border: 2px solid rgba(255, 255, 255, 0.109);
 		}
   
 		#button1 {
@@ -37,14 +37,34 @@
 		#button2 {
 		  margin-left: 20px;
 		}
+
+
+
+		.image {
+        flex: 1;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      	}
+
+		#image1 {
+			background-image: url('content/Patrice.png');
+		}
+
+		#image2 {
+			background-image: url('content/Ronaldo.png');
+		}
+		
 	  </style>
 </head>
 <body>
+	<div class="image" id="image1"></div>
 	<a href="patrice.html" target="_self" style="text-decoration: none;" style="background-color: red; ">
 		<button id="button1">Patrice</button>
 	</a>
 	<a href="ronaldo.html" target="_self" style="text-decoration: none;" style="background-color: red;">
 		<button id="button2">Ronaldo</button>
 	</a>
+	<div class="image" id="image2"></div>
 </body>
 </html>
