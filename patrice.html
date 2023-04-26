@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patrick il hack en php</title>
+	<title>Ronaldo il hack en php</title>
 	<style>
 		body {
 			margin: 0;
@@ -16,9 +16,37 @@
 			height: 100%;
 			object-fit: fill;
 		}
+
+		button {
+		top: 10px;
+		left: 50%;
+		position: absolute;
+		background-color: #333;
+		color: #fff;
+		border-radius: 50%;
+		border: none;
+		font-size: 1rem;
+		width: 75px;
+		height: 75px;
+		transition: transform 0.6s ease-in-out;
+		top: 10px;
+		z-index: 1;
+
+		}
+
+		button:hover {
+		transform: scale(1.1);
+		border: 5px solid rgb(248, 0, 0);
+		}
+  
+		#button1 {
+		margin-right: 20px;
+		}
+
 	</style>
 </head>
 <body>
+	<a href="index.html"><button id="button1">HOME</button></a>
 	<video autoplay loop="true" width="1280" height="720" poster="content/8pbk20wf.bmp" onclick="this.paused ? this.play() : this.pause();" id="vid">
 		<source type="video/mp4" src="content/PatriceLeMeilleur.mp4">
 	</video>
