@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patrick il hack en php</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: fill;
+		}
+	</style>
+</head>
+<body>
+	<video autoplay loop="true" width="1280" height="720" poster="content/8pbk20wf.bmp" onclick="this.paused ? this.play() : this.pause();" id="vid">
+		<source type="video/mp4" src="content/PatriceLeMeilleur.mp4">
+	</video>
+	<script>
+		document.getElementById('vid').play();
+	</script>
+</body>
+</html>
