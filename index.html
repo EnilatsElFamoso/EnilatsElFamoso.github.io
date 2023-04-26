@@ -19,18 +19,11 @@
 	</style>
 </head>
 <body>
-	<video id="vid" loop>
-		<source src="PatriceLeMeilleur.mp4" type="video/mp4">
+	<video autoplay loop="true" width="1280" height="720" poster="8pbk20wf.bmp" onclick="this.paused ? this.play() : this.pause();" id="vid">
+		<source type="video/mp4" src="PatriceLeMeilleur.mp4">
 	</video>
 	<script>
-		var video = document.getElementById("vid");
-		video.addEventListener('click', function() {
-			if (video.paused) {
-				video.play();
-			} else {
-				video.pause();
-			}
-		});
+		document.getElementById('vid').play();
 	</script>
 </body>
 </html>
